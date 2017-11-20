@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Upload some pics (png/jpg only) 
+  form(method="POST" enctype="multipart/form-data")
+    .form-group
+      label(for='exampleInputFile') File input
+      input#exampleInputFile(type='file' name="monupload" multiple)
+    button.btn(type='submit') Envoyer
+
